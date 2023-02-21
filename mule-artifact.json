@@ -1,0 +1,13 @@
+{
+  "minMuleVersion": "4.4.0",
+   "secureProperties": ["app.env"],
+  "redeploymentEnabled": true,
+  "name": "secure-properties",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": []
+    }
+  }
+}
