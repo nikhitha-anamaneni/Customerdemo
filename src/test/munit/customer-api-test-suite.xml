@@ -48,6 +48,22 @@
 			<munit:set-null-payload doc:name="Set null payload" doc:id="0c0d5cf9-3f60-43ba-9467-0187331afebb" />
 		</munit:validation>
 	</munit:test>
+	<munit:test name="customer-api-test-suite-customer-api-mainTest" doc:id="4418fedd-3061-4cd5-b41c-6c329e50a051" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to customer-api-main" doc:id="a3e0904d-0294-4543-a385-d3dc70684483" name="customer-api-main"/>
+		</munit:execution>
+		<munit:validation >
+			<munit:set-null-payload doc:name="Set null payload" doc:id="f32d3d41-86b5-48dd-ba20-430446343c66" />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="customer-api-test-suite-customer-api-consoleTest" doc:id="c6c6093d-988e-4a32-88cc-fa77355ac434" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to customer-api-console" doc:id="4260027e-6df9-4702-8e1f-49af5ec444e2" name="customer-api-console"/>
+		</munit:execution>
+		<munit:validation >
+			<munit:set-null-payload doc:name="Set null payload" doc:id="16abb77f-be58-434a-83d2-7d1ac81f07fc" />
+		</munit:validation>
+	</munit:test>
 
 
 </mule>
