@@ -222,14 +222,7 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
-	<distributionManagement>
-		<repository>
-			<id>Repository</id>
-			<name>Exchange Private Repository</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/ddbe5750-31fa-419a-b0b7-f71b61bf57b1/maven</url>
-			<layout>default</layout>
-		</repository>
-	</distributionManagement>
+	
 
 	<repositories>
 		<repository>
