@@ -208,13 +208,13 @@
 			<version>1.2.3</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>ddbe5750-31fa-419a-b0b7-f71b61bf57b1</groupId>
 			<artifactId>customerDemo</artifactId>
 			<version>1.0.0</version>
 			<classifier>raml</classifier>
 			<type>zip</type>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-apikit-module</artifactId>
