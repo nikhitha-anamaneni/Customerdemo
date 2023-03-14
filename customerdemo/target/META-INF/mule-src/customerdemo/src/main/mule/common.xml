@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<configuration-properties doc:name="Configuration properties" doc:id="cc100e9b-80e9-44e7-b259-fe61e319ed0a" file="${app.env}/app.properties" />
+	<flow name="commonFlow" doc:id="16d9a114-2eb2-4027-849f-ff9ed94aa22d" >
+		<http:listener doc:name="Listener" doc:id="93746623-1256-4532-b95b-c4aa527fd275" config-ref="customer-api-httpListenerConfig" path="api1.path"/>
+		<ee:transform doc:name="Transform Message" doc:id="15127ab9-9d78-4c73-b234-7a6456f6fe0e" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+[
+  {
+    Id: 1,
+    firstName: "Max",
+    lastName: "Martin",
+    DoB: "25-6-1995",
+    Address: "No:3 Aviatin colony",
+    postal: 3333,
+    country: "India",
+    "type": "personal"
+  }, 
+  {
+    Id: 2,
+    firstName: "Mule",
+    lastName: "Jayson",
+    DoB: "2-5-1965",
+    Address: "No:3 greamsroad colony",
+    postal: 5343,
+    country: "India",
+    "type": "business"
+  }
+]]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>

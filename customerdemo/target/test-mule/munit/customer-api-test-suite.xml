@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="customer-api-test-suite.xml" />
+	<munit:test name="customer-api-test-suite-put:\customer\(id):application\json:customer-api-configTest" doc:id="40816aca-1fc0-456a-8129-a261b551a9d1" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to put:\customer\(id):application\json:customer-api-config" doc:id="f9849254-b63d-48c6-9405-7b73e706e5fa" name="put:\customer\(id):application\json:customer-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit:set-null-payload doc:name="Set null payload" doc:id="06aea46f-7e17-429f-86bc-c5b6d11c7969" />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="customer-api-test-suite-delete:\customer\(id):application\json:customer-api-configTest" doc:id="9819d528-6dca-48b5-8606-8a62957ba094" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to delete:\customer\(id):application\json:customer-api-config" doc:id="c667abd5-16aa-4c68-ab30-3c9d574b64fc" name="delete:\customer\(id):application\json:customer-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit:set-null-payload doc:name="Set null payload" doc:id="92712aad-3ae6-49c3-8b46-7ca19f4f8815" />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="customer-api-test-suite-get:\customer:customer-api-configTest" doc:id="e133c10c-6561-44ea-8b8a-e7e6231a56e5" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to get:\customer:customer-api-config" doc:id="68ffafe8-4ac3-425f-895e-369a7414f874" name="get:\customer:customer-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit:set-null-payload doc:name="Set null payload" doc:id="2e97bbc6-29c3-4f47-b515-719a7310eb28" />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="customer-api-test-suite-get:\customer\(id):customer-api-configTest" doc:id="cc8de729-7e1e-4374-84ef-63bbaf9e8cfe" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to get:\customer\(id):customer-api-config" doc:id="14f7616e-1377-4f3c-aa32-b94b89782337" name="get:\customer\(id):customer-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit:set-null-payload doc:name="Set null payload" doc:id="74b53188-06a1-4658-a4c0-3a7546716886" />
+		</munit:validation>
+	</munit:test>
+	<munit:test name="customer-api-test-suite-post:\customer:application\json:customer-api-configTest" doc:id="76c76308-b7c7-4a78-95e0-bbb0893b3084" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to post:\customer:application\json:customer-api-config" doc:id="cf08daea-3973-4999-a8a9-265ad0fbe461" name="post:\customer:application\json:customer-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit:set-null-payload doc:name="Set null payload" doc:id="0c0d5cf9-3f60-43ba-9467-0187331afebb" />
+		</munit:validation>
+	</munit:test>
+
+
+</mule>

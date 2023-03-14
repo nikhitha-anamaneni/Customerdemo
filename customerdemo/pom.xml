@@ -68,8 +68,8 @@
 						<server> Repository</server>
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
-       						 <app.env>${app.env}</app.env>
-      					</properties>
+							<app.env>${app.env}</app.env>
+						</properties>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
@@ -116,7 +116,7 @@
 	</build>
 
 	<dependencies>
-	<dependency>
+		<dependency>
 			<groupId>com.mulesoft.mule.modules</groupId>
 			<artifactId>mule-compatibility-module</artifactId>
 			<version>1.4.0</version>
@@ -221,8 +221,13 @@
 			<version>1.8.1</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
+		<dependency>
+			<groupId>org.mule.connectors</groupId>
+			<artifactId>mule-email-connector</artifactId>
+			<version>1.7.1</version>
+			<classifier>mule-plugin</classifier>
+		</dependency>
 	</dependencies>
-
 	<distributionManagement>
 		<repository>
 			<id>Repository</id>
@@ -231,6 +236,7 @@
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
+
 	<repositories>
 		<repository>
 			<id>anypoint-exchange-v3</id>

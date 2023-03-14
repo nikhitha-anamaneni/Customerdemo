@@ -1,0 +1,23 @@
+{
+  "configs": [
+    "common.xml",
+    "customer-api.xml"
+  ],
+  "secureProperties": [
+    "app.env"
+  ],
+  "redeploymentEnabled": true,
+  "name": "secure-properties",
+  "minMuleVersion": "4.4.0",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
