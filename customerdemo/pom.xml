@@ -208,13 +208,21 @@
 			<version>1.2.3</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
+<<<<<<< HEAD:customerdemo/pom.xml
 	<!-- 	<dependency>
+=======
+		<!--<dependency>
+>>>>>>> cdc0363e5b052c5215ad8c7ec94d2dc1466c3125:pom.xml
 			<groupId>ddbe5750-31fa-419a-b0b7-f71b61bf57b1</groupId>
 			<artifactId>customerDemo</artifactId>
 			<version>1.0.0</version>
 			<classifier>raml</classifier>
 			<type>zip</type>
+<<<<<<< HEAD:customerdemo/pom.xml
 		</dependency> -->
+=======
+		</dependency>-->
+>>>>>>> cdc0363e5b052c5215ad8c7ec94d2dc1466c3125:pom.xml
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-apikit-module</artifactId>
@@ -222,6 +230,7 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
+<<<<<<< HEAD:customerdemo/pom.xml
 	<!-- <distributionManagement>
 		<repository>
 			<id>Repository</id>
@@ -230,6 +239,9 @@
 			<layout>default</layout>
 		</repository>
 	</distributionManagement> -->
+=======
+	
+>>>>>>> cdc0363e5b052c5215ad8c7ec94d2dc1466c3125:pom.xml
 
 	<repositories>
 		<repository>
