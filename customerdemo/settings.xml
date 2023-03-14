@@ -9,5 +9,32 @@ http://maven.apache.org/xsd/settings-1.0.0.xsd">
       <username>~~~Client~~~</username>
       <password>c8bf38454468401fa0ca1fdac370652b?1fd395bb48CC4470899F9c0C18d877c2</password>
     </server>
+    <server>
+         <id>MuleRepository</id>
+      <username>capgemini.uk.nexus</username>
+      <password>AYZdEReTxjuqGgVLTrpP</password>
+    </server>
   </servers>
+  <profiles>
+<profile>
+                        <id>Mule</id>
+                        <activation>
+                                <activeByDefault>true</activeByDefault>
+                        </activation>
+                        <repositories>
+                                <repository>
+                                        <id>MuleRepository</id>
+                                        <name>MuleRepository</name>
+                                        <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+                                        <layout>default</layout>
+                                        <releases>
+                                                <enabled>true</enabled>
+                                        </releases>
+                                        <snapshots>
+                                                <enabled>true</enabled>
+                                        </snapshots>
+                                </repository>
+                        </repositories>
+                </profile>
+  </profiles>
 </settings>
